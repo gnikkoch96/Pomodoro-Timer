@@ -1,0 +1,28 @@
+Possible Features:
+1. UI (Using Frame) to show the time going down
+2. No Pause or w/ Pause
+3. Reset Button aka the Stop Button
+	a. The Reset Button should make it so that it resets to the first input of time that you input (might need to make
+		seperate variables to hold these, so that we have something to reference to as the static variables change.
+	
+
+Extra:
+1. Possibility to change the font type
+
+
+Design
+1. _ _ : _ _ : _ _ 		(Hour : Min : Sec)
+2. Two Buttons on the bottom
+	a. Start Timer -> Stop Timer
+	b. Reset
+
+
+How the Timer should work:
+1. We ask the User to Place input into 2 or 3 Textboxes (Hour, Min, and Sec respectively)
+2. Then convert those input into non-editable text while changing.
+3. Second goes down all the way to 00, and then minute goes down, and so forth
+4. I am thinking of using Thread.sleep() while decrementing the second
+4. (Alternative-Easy)Using Timer Class that is made for Java
+
+
+

@@ -1,0 +1,92 @@
+====================================================================================================================================================
+05/29
+(Errors/Problems)
+1. The image is way to big
+
+(Thoughts)
+1. I chose to make the productiveText...and etc... static because I don't want to keep making objects (slows down program)
+2. BoxLayout is the best choice to align the fields in linear manner
+
+(When you come back)
+1. Learn how to make the tomatoInput JPanel have a box layout
+
+====================================================================================================================================================
+05/30
+(Errors/Problems)
+1. I align the components incorrectly(Not good practice). I was thinking of using gridlayout instead...
+
+(Thoughts)
+1. I added a Settings button in the TimerGUI class so that I can change the minutes for productivity, small break, and long break
+2. I need to becareful when it comes to setting frame to be visible(false) as that doesn't close the frame and it will just stay on the memory. So what
+I am thinking is that everytime I want to start a pomdoro, I close the pomodoro frame. And everytime I want to change the setting of the pomdoro, I 
+close the TimerGUI
+
+(When you come back)
+1. Work on setting up the minutes after starting the pomodoro timer
+
+
+====================================================================================================================================================
+05/31
+
+(Errors/Problems)
+1. There seems to be a glitch when doing a combination of stop, pause, start, and etc... Keep trying combinations to figure out what logic is incorrect
+2. When you press stop, it resets to 0 (I may change it so that if the user presses start it equals to the productivity time automatically like how it is in the 
+browser extension that I have
+3. When timer is done you only get the option to start small break, it should be that once you the small break is finish another frame appears that says to start
+productivity time
+4. Also, the counter increases during the small breaks
+5. Closing the Timer Frame (w/ "X") closes all the programs - Find a way to isolate those cancels
+
+(Thoughts)
+1. I see that planning ahead of time is good in that you prevent the glitches that are happenign to me right now. And since I wrote so much code already, it will
+be a headache to go through all of it just to find a logical error
+
+(When you come back)
+1. Try to implement some of the features you mentioned on your Brainstorm.txt
+2. Fix that glitch
+3. Might also want a button to reset the counter
+
+
+====================================================================================================================================================
+06/01
+
+(What I want to work on)
+1. After the User Presses Small Break, a Boolean should be changed and a test should be made to switch back in to productivity
+2. If the user stops the timer, it should default to whatever the user typed in previously and not 0.
+
+(Errors)
+1. It might be possible that my timer is inaccuate, so test it 
+
+(Thoughts)
+1. I am pretty much done, just need to add more aesthetics. Also look at the brainstorm to see what other features that I can add
+
+(When you come back)
+1. Look at Brainstorm to see what you can add
+2. Add Borders around Icon and the Input Panels
+
+====================================================================================================================================================
+06/02
+
+(What I want to work on)
+1. Fix the error below
+2. Edit the Fields in PomodoroGUI to keep previous inputs
+3. Add Border
+4. Look @ Brainstorm
+5. Make a Demonstration -- Pressentation
+
+(Errors)
+1. After pressing Settings, and clicking start pomodoro the timer speeds up (try this)
+	a. I am thinking because I didn't close the current timer task, it is executing both at the same time, so I am going to try and close the timer
+		after pressing the settings feature (Works)
+		
+2. After reaching a total of 60 mins or above, it still asks me to take a small break
+3. Can't make an executable with sound and image
+
+====================================================================================================================================================
+06/03
+(What I want to work on)
+1. Make an executable with sound and picture
+2. Make a demonstration of your program
+3. Finished...
+
+

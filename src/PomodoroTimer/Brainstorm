@@ -1,0 +1,71 @@
+Project: Pomodoro Timer
+
+1. We are going to be using the Timer project as our timer which means that we have to make a reference object in this program
+2. We create our own GUI (Frame) that asks the user:
+	a. Productive Time
+		i. # of minutes the user wants to stay focused for
+		
+	b. Break Time (Small)
+		i. # of minutes the user wants to take a break for 
+		
+	c. Break Timer (Large)
+		i. # of min the user wants after one hour has been completed
+		
+	
+3. Use swing class, and keybinds when pressing begin
+4. Include a picture of a Tomato at the top of the frame
+5. Make this an executable and allow sound to play (one of the errors of the TimerGUI class)
+6. Also, force the pop up window to rise up without any interupption as I noticed it just highlights rather than pops up
+
+7. I noticed that a user might want to change the setting of the timer, so have a include a method that does that to the timer
+
+8. After the productivity session has completed and an alert message appears, the button will then insert the break time in the fields of the timer
+to execute the small break stage
+
+9. I want to add borders around the jpanels (tomatoInputs) and the image
+
+10. Find a better image (Rectangular V x Y where V < Y)
+
+11. Once the user presses start Pomodoro, min = productivityMin, timer task should execute
+
+12. I might need to make a seperate method in the TimerGUI class mainly for the Pomodoro class which will make the class very unique to the pomodoroGUI
+
+13. How are we going to know when it is break time and what not? 
+	a. Steps:
+		i. Start Productivity Time
+		ii.Finish Productivity Time
+		iii.Go to Small Break
+		iv. Finish Small Break
+		v. Start again until (sum of productivity time exceeds an hour)
+		vi.if productivity time exceeds an hour, then you go to big break
+		
+14. I also want to display a counter of how many productvitiy sets I have done.	
+
+15. When I tried running the program on my laptop, the user interface was gigantic. I need to make it so that it is responsive to the computer rather than a 
+static width and height
+
+16. Turn this into an executable with a working timer sound and stuff
+
+17. The textfields of the pomodoro should retain the previous values the user has entered
+
+18. I might want to add a skip break button, so that it doesn't ruin the flow or actaully I can just add the productivity option with the display
+
+
+//Old Code for switching out buttons
+		//Centering Components
+//		reset.setHorizontalAlignment(JButton.CENTER);
+//		if(!switchTime) {																//If you have not taken a break, then take one
+//			if(sumProductivityMin < 60) {												//Take a short break
+//				smallBreakButton.setHorizontalAlignment(JButton.CENTER);
+//				breakButton.add(smallBreakButton);
+//			}else {																		//Take a long break
+//				longBreakButton.setHorizontalAlignment(JButton.CENTER);
+//				breakButton.add(longBreakButton);
+//				sumProductivityMin = 0;													//Starts over
+//			}
+//		}else {																			//Start your productivity session again
+//			productivityButton.setHorizontalAlignment(JButton.CENTER);
+//			breakButton.add(productivityButton);
+//			switchTime = false;															//Switches back to false after adding in the productivityButton
+//		}
+//		

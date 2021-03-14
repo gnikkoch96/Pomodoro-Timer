@@ -1,0 +1,46 @@
+Project: Pomodoro Timer
+
+//Variables and what they do
+1. int Variables
+	a. productivityMin - holds the value (in minutes) of how long the user wants to be productive for
+	b. smallBreakMin   - holds the value (in minutes) of how short the breaks are in between productivity time
+	c. longBreakMin    - holds the value (in minutes) of how long the longer breaks are going to be after being productive for an hour
+	
+
+2. JPanel Variables
+	a. tomatoImage     - holds the panel that contains image of the tomatotimer
+	b. tomatoInputs    - contains the text fields that the user will put the values into
+	c. tomatoButtons   - holds the button that will start the pomodoro timer
+	
+3. JTextField Variables
+	a. prouctivityTime - is the field that will accept the user's input in the productivity
+	b. smallBreakTime  - is the field that will accept the user's input in the small break
+	c. longBreakTime   - is the field that will accept the user's input in the long break
+	d. productiveText  - used to display "Productive Time: " in the TextFields
+	e. smallBreakText  - used to display "Productive Break(Small): " in the TextFields
+	f. longBreakText   - used to display "Productive Break(Long): " in the TextFields
+	
+4. TimerGUI			   - This is to reference to the Timer I made in the other class
+
+5. JButton
+	a. StartPomdoro    - The Button will be used to create a TimerGUI project to show the timer
+	
+
+	
+
+	
+//Other things that I am learning
+1. I realize why we put some methods in private. When we release these "classes," by setting a method that should be private to be public, the
+programmer has access to methods that we don't want them to access other than within the class that it was created in.
+
+BoxLayout Class
+1. Stacks its components on top of each other or places them in a row of your choice
+2.
+
+Box Class
+1. Makes invisible components that affects layout
+2. 
+
+
+Border Class
+1. Set border on JComponent

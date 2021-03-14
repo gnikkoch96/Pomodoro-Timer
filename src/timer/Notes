@@ -1,0 +1,72 @@
+Timer Class
+1. Thread Safe which means that multiple threads can share a single Timer object
+2. Uses Object.wait(long) method (does not give accurate timing)
+3. "Daemon" Thread are low priority threads that run in the background
+
+
+TimerTask Class
+1. Allows input of Tasks for the Timer Class
+2. Scheduled for one-time or repeated execution in a Timer Object
+3. This is an interface, so you can't make an object out of it
+4. Instead, you need to...(Just Check out "TimerPractice.java")
+
+
+
+TimerPractice Class
+1. So in this practice, I used the method schedule(TimerTask task, long delay, long period)
+	a. task - task to be scheduled
+	b. delay - delay in milliseconds before task is executed
+	c. period - time in milliseconds between the tasks (how long it waits before executing again)
+	d. 1 Sec is 1000 millisecond (more or less as the Timer class isn't as accurate)
+	
+Runnable Class
+1. Whenever you try to create an object, make sure to override the run() (again check the TimerGUI.java)
+
+
+Box Class
+1. I mainly used this class to implement the JPanel in it, so that I may "center" it to the middle of the Frame
+2. It doesn't work when you don't have the "createVerticalGlue/HorizontalGlue"
+	a. Also, you may need to use it twice before and after adding components to the Box object
+3. Its methods are mainly Static, so they belong to class and are called by (Box.method())
+
+
+KeyListener Class
+1. There are 3 Type of Events
+	a. Key-Typed
+	b. Key-Pressed
+	c. Key-Released
+2. A component must have focus to read what keys are being pressed
+3. To make a component get keyboard focus
+	a. isFocusable must return true
+	b. component must setFocusable(true) 
+4. Use setFocusTraversalKeyEnaled(true) to transfer the focus wherever the cursor is located at (you can make your own rule
+to this by setting the argument to false)
+5. Uses the KeyEvent Class
+
+Key Event Class
+1. All its members are of integer type
+2. The reason why it wasn't working in the "KeyBoardListenerPractice.java" is because I didn't use the "addKeyListener(this)" 
+to the JTextArea
+3. To transfer to focus of the typing, you would need to try out WndowsListener, or use the "setFocusTraversalKeysEnabled(true)" 
+which allows the focus to shift with using tab to shift to other components
+
+
+Focus Subsystem
+1. Only one component at a time in the window system can have the keyboard focus
+2. component.requestFocusInWindow() is the way to go
+	a. Must use after adding component, but before making the window/frame visible
+	
+Playing Sound
+1. Java's inbuilt libraries only support files of AIFC, AIFF, AU, SND, and WAVE formats
+2. We can either use the Clip or SourceDataLine Interface
+3. 
+
+//Side Notes and Reasonings
+Pause Button
+1. It only needs a timer.close() because, when we close it, the values for hour, min, and sec are saved from when the timer 
+canceled all of its tasks since they are static members. When we press start again, it already has the values for those
+variables, and it just generates a new timer with the same task to count down from where the hour, min, and sec variables
+hold
+
+
+

@@ -1,0 +1,54 @@
+05/20
+1. When you come back, continue reviewing JFrame and how to make a Frame appear 
+
+05/21
+1. When you come back, fix the sizes of the buttons as I want them look right
+2. Then work on implementing the actions for those buttons
+
+05/22
+1. Got the Start Button Action to work while updating the textFields
+2. Include a way to replace the start button with a pause button (switch them out)
+3. Implement the Action of the Pause button (I have a feeling it will have to be related to something within the timer class)
+4. I also noticed that the if and else's might slow down the program for big numbers which may make the timer a inaccurate
+5. Also, I was testing out 1 min for the timer, and it says "finished" when it reached 48 seconds
+6. Find a way to terminate the program when you press the "X" as it still runs when you close down the window
+
+05/23
+1. (ERROR) I just found a glitch where if you press start and pause so many times it runs the task that many times causing an over
+   flow of actions and glitches
+2. I realize that within one execution of the program, you can't change your "initial" value as it is only written once...
+	Instead of only writing once, how about only writing to the initial variables when typing is involved? Like a Key Listener
+	or something like that.
+3. (ERROR) The user can still place three digits in one box which will cause an error (mainly logical)
+4. (ERROR) Users can press stop without starting the timer, and that will cause an exception error
+5. I am trying to find a good way to reset the timer to the initial values or whenver the user has typed in new values 
+themselves.
+6. When you come back, work on learning key event to update the values of the initial hour, min, and sec.
+
+
+05/24
+1. I am going to use a static variable isKey to show that a key has been pressed, and when a key has been pressed, then that
+means that is when we update the initial values to return to
+2. I am not sure if this is the proper way of doing it, but I made all of my field components have an keylistener 
+3.(ERROR) You can't start when the values are of 0
+4. When you come back, work on adding noise that loops itself when the timer has reached 0
+
+05/26
+1. (Improvement)Instead of using KeyListener use Key Bindings which is mainly used for Swing Objects like JFrame, JPanel, and
+etc...
+
+
+05/27
+1. I manage to include a sound when the timer finishes, and it loops continuously, but I used my own class that I created by looking up a guide online
+	a. PlaySound.java is the class that I created
+2. When you come back, I want to make a pop up appear that says the timer is done with a button that will stop the timer and reset everything 
+
+
+05/28
+1. For the finishDisplay(), I had to seperate JTextField and JButton in different JPanels to align them in the center
+2. I was having an issue with components not being shown in the JFrame (finishDisplay()), to fix this I needed to either 
+	a. Use the revalidate()
+	b. Set the setVisible(true) after adding in the components
+	
+3. I finished the basics for now
+4. To change the sound, you must go on the PlaySound.java and change the string value

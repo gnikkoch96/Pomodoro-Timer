@@ -1,0 +1,24 @@
+//Start Timer Method "Task"
+//				if(sec == 0) {
+//					if(min == 0) {
+//						if(hour == 0) {
+//							//Execute Beeping Sound because Timer has finished
+//							System.out.println("Finished");
+//							timer.cancel();						//Timer will stop after r 00:00:00
+//						}
+//						else {
+//							//Hour goes down by one, min goes to 60, and sec goes to 60
+//							hour--;
+//							min = 59;
+//							sec = 59;
+//						}//hour
+//					}else {
+//						//The minute goes down, and second becomes 60 again
+//						min--;
+//						sec = 59;
+//					}//min
+//				}else{
+//					//Second goes down by one
+//					sec--;
+////					System.out.println("Second: " + sec);
+//				}//sec
